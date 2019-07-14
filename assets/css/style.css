@@ -5,19 +5,14 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-label {
-    color: #32d6df;
-}
-
 /* Classes */
 
 .question {
     margin-top: 2%;
     padding-top: 2%;
-    border-top: solid 2px #32d6df;
+    border-top: solid 2px white;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fc66a3;
 }
 
 /* IDs */
@@ -34,10 +29,10 @@ label {
 #game-container {
     width: 80%;
     margin: 0 auto;
-    background-color: white;
+    background-color: #32d6df;
     text-align: center;
     padding: 2%;
-    border: solid 2px #32d6df;
+    border: solid 2px white;
     border-radius: 5px;
     min-height: 85vh;
 }
@@ -45,9 +40,8 @@ label {
 #game-title {
     font-size: 3rem;
     font-weight: bold;
-    color: #32d6df;
     text-decoration: underline;
-    text-decoration-color: #fc66a3;
+    text-decoration-color: white;
 }
 
 #start-button {
@@ -60,8 +54,7 @@ label {
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bold;
     background-image: linear-gradient(#fc66a3, #c49cac);
-    color: white;
-    border-color: #32d6df;
+    border-color: white;
     border-radius: 5px;
 }
 
@@ -81,7 +74,6 @@ label {
 #game-timer {
     font-size: 2rem;
     font-weight: bold;
-    color: #32d6df;
 }
 
 #footer {
