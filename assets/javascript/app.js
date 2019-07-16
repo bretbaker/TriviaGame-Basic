@@ -6,7 +6,7 @@ let timeInterval;
 
 const timer = () => {
     clearInterval(timeInterval);
-    timeInterval = setInterval(countDown, 100);
+    timeInterval = setInterval(countDown, 1000);
 }
 
 const countDown = () => {
