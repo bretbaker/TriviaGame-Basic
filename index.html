@@ -32,84 +32,87 @@
                     <br>
                     <h2 id="game-timer">Time Remaining: 120 Seconds</h2>
 
+                        <!-- Fixed Mini Timer on the side -->
+                        <h2 id="mini-timer">120</h2>
+
                     <!-- Question 1 -->
                     <h2 class="question" >What is the longest river in the United States?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-1">Colorado River
-                        <input type="radio" name="question-1">Mississippi River
-                        <input type="radio" name="question-1">Missouri River
-                        <input type="radio" name="question-1">Rio Grande River
+                        <input type="radio" name="question-1" id="incorrect-1">Colorado River
+                        <input type="radio" name="question-1" id="correct-1">Mississippi River
+                        <input type="radio" name="question-1" id="incorrect-2">Missouri River
+                        <input type="radio" name="question-1" id="incorrect-3">Rio Grande River
                     </fieldset>
 
                     <!-- Question 2 -->
                     <h2 class="question">What state is bordered by Nebraska, Kansas, Oklahoma, New Mexico, Utah, and Wyoming?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-2">Idaho
-                        <input type="radio" name="question-2">Missouri
-                        <input type="radio" name="question-2">Texas
-                        <input type="radio" name="question-2">Colorado
+                        <input type="radio" name="question-2" id="incorrect-4">Idaho
+                        <input type="radio" name="question-2" id="incorrect-5">Missouri
+                        <input type="radio" name="question-2" id="incorrect-6">Texas
+                        <input type="radio" name="question-2" id="correct-2">Colorado
                     </fieldset>
 
                     <!-- Question 3 -->
                     <h2 class="question">Death Valley is located in what U.S. state?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-3">Nevada
-                        <input type="radio" name="question-3">Utah
-                        <input type="radio" name="question-3">California
-                        <input type="radio" name="question-3">Texas
+                        <input type="radio" name="question-3" id="incorrect-7">Nevada
+                        <input type="radio" name="question-3" id="incorrect-8">Utah
+                        <input type="radio" name="question-3" id="correct-3">California
+                        <input type="radio" name="question-3" id="incorrect-9">Texas
                     </fieldset>
 
                     <!-- Question 4 -->
                     <h2 class="question">What U.S. state boasts the following rivers: the Guadalupe, Trinity, Rio Grande, Brazos, and Colorado?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-4">California
-                        <input type="radio" name="question-4">Oklahoma
-                        <input type="radio" name="question-4">Texas
-                        <input type="radio" name="question-4">Colorado
+                        <input type="radio" name="question-4" id="incorrect-10">California
+                        <input type="radio" name="question-4" id="incorrect-11">Oklahoma
+                        <input type="radio" name="question-4" id="correct-4">Texas
+                        <input type="radio" name="question-4" id="incorrect-12">Colorado
                     </fieldset>
 
                     <!-- Question 5 -->
                     <h2 class="question">Which of the following states does NOT border the Great Lakes?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-5">Ohio
-                        <input type="radio" name="question-5">Michigan
-                        <input type="radio" name="question-5">Iowa
-                        <input type="radio" name="question-5">Illinois
+                        <input type="radio" name="question-5" id="incorrect-13">Ohio
+                        <input type="radio" name="question-5" id="incorrect-14">Michigan
+                        <input type="radio" name="question-5" id="correct-5">Iowa
+                        <input type="radio" name="question-5" id="incorrect-15">Illinois
                     </fieldset>
 
                     <!-- Question 6 -->
                     <h2 class="question">Pierre is the capital of what U.S. state?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-6">Montana
-                        <input type="radio" name="question-6">Wisconsin
-                        <input type="radio" name="question-6">South Dakota
-                        <input type="radio" name="question-6">Rhode Island
+                        <input type="radio" name="question-6" id="incorrect-16">Montana
+                        <input type="radio" name="question-6"  id="incorrect-17">Wisconsin
+                        <input type="radio" name="question-6" id="correct-6">South Dakota
+                        <input type="radio" name="question-6" id="incorrect-18">Rhode Island
                     </fieldset>
 
                     <!-- Question 7 -->
                     <h2 class="question">What is the tallest mountain in the United States?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-7">Hood
-                        <input type="radio" name="question-7">Ranier
-                        <input type="radio" name="question-7">McKinley
-                        <input type="radio" name="question-7">Rushmore
+                        <input type="radio" name="question-7" id="correct-7">Denali
+                        <input type="radio" name="question-7" id="incorrect-19">Ranier
+                        <input type="radio" name="question-7" id="incorrect-20">McKinley
+                        <input type="radio" name="question-7"  id="incorrect-21">Rushmore
                     </fieldset>
 
                     <!-- Question 8 -->
                     <h2 class="question">Lake Okeechobee is located in what U.S. state?</h2>
                     <br>
                     <fieldset>
-                        <input type="radio" name="question-8">Wyoming
-                        <input type="radio" name="question-8">Florida
-                        <input type="radio" name="question-8">Oklahoma
-                        <input type="radio" name="question-8">Texas
+                        <input type="radio" name="question-8" id="incorrect-22">Wyoming
+                        <input type="radio" name="question-8" id="correct-8">Florida
+                        <input type="radio" name="question-8" id="incorrect-23">Oklahoma
+                        <input type="radio" name="question-8" id="incorrect-24">Texas
                     </fieldset>
 
                     <!-- Submit Button -->
@@ -117,6 +120,14 @@
                     <br>
                     <button id="submit-button">Submit</button>
 
+                </div>
+
+                <!-- Results Container -->
+                <div id="results-container">
+                    <h2 id="result-exclamation"></h2><br><br>
+                    <p id="correct-result" class="result-font-size"></p><br>
+                    <p id="incorrect-result" class="result-font-size"></p><br>
+                    <p id="unanswered-result" class="result-font-size"></p>
                 </div>
 
 
